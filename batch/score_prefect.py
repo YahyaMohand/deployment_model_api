@@ -41,7 +41,7 @@ def prepare_dictionaries(df: pd.DataFrame):
 
 
 def load_model(run_id):
-    logged_model = f's3://marcospaulo-mlops/airflow/1/{run_id}/artifacts/model'
+    logged_model = f's3://yahyamohand-mlops/airflow/1/{run_id}/artifacts/model'
 
     model = mlflow.pyfunc.load_model(logged_model)
     return model
